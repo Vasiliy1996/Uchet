@@ -63,6 +63,7 @@ type
     ADOQuery4: TADOQuery;
     DataSource5: TDataSource;
     ADOQuery5: TADOQuery;
+    Label21: TLabel;
     procedure DBLookupComboBox1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
   private

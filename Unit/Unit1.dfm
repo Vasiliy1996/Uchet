@@ -155,6 +155,13 @@ object Form1: TForm1
     Caption = 'Label20'
     Visible = False
   end
+  object Label21: TLabel
+    Left = 96
+    Top = 312
+    Width = 37
+    Height = 13
+    Caption = 'Label21'
+  end
   object Button1: TButton
     Left = 558
     Top = 490
