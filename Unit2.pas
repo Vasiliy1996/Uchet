@@ -12,6 +12,8 @@ type
     /// <link>aggregation</link>
     SystemSkladUchet: TSystemSkladUchet;
   public
+    published
+    constructor create(AOwner: TComponent); override;
     { Public declarations }
   end;
 
@@ -21,5 +23,13 @@ var
 implementation
 
 {$R *.dfm}
+
+{ TForm2 }
+
+constructor TForm2.create(AOwner: TComponent);
+begin
+  inherited;
+  SystemSkladUchet:= TSystemSkladUchet.Create;
+end;
 
 end.

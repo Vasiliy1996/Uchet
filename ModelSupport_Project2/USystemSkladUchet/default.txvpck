@@ -35,7 +35,7 @@
     </reference>
     <reference referencedUin="delphi:e_class:src:Project2:Unit2.TForm2">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="60,320,232,98" />
+      <property name="bounds" value="60,320,232,115" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_field:src:Project2:Unit2.TForm2.SystemSkladUchet" />
       <reference referencedUin="delphi:l_ast:src:Project2:Unit2.TForm2.SystemSkladUchet">
@@ -43,6 +43,7 @@
         <property name="targetAnchor" value="105,94" />
         <property name="bendpoints" value="" />
       </reference>
+      <reference referencedUin="delphi:e_method:src:Project2:Unit2.TForm2.create(System.Classes.TComponent)" />
     </reference>
   </view>
 </nodeSet>
