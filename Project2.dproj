@@ -1,9 +1,9 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{B027D90E-1F11-4CFD-A399-6B51E619E4E4}</ProjectGuid>
+			<ProjectGuid>{DC26D541-538B-41BD-B8BC-BEE48A284C6D}</ProjectGuid>
 			<ProjectVersion>13.4</ProjectVersion>
 			<FrameworkType>VCL</FrameworkType>
-			<MainSource>Project1.dpr</MainSource>
+			<MainSource>Project2.dpr</MainSource>
 			<Base>True</Base>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -40,7 +40,7 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
-			<DCC_UsePackage>bindcompfmx;fmx;rtl;dbrtl;IndySystem;DbxClientDriver;bindcomp;inetdb;DBXInterBaseDriver;xmlrtl;ibxpress;DbxCommonDriver;IndyProtocols;DBXMySQLDriver;dbxcds;soaprtl;FMXTee;bindengine;CustomIPTransport;dsnap;IndyCore;fmxase;CloudService;FmxTeeUI;inet;fmxobj;inetdbxpress;fmxdae;dbexpress;IPIndyImpl;$(DCC_UsePackage)</DCC_UsePackage>
+			<DCC_UsePackage>bindcompfmx;fmx;rtl;dbrtl;IndySystem;DbxClientDriver;bindcomp;inetdb;DBXInterBaseDriver;xmlrtl;DbxCommonDriver;IndyProtocols;DBXMySQLDriver;dbxcds;soaprtl;bindengine;CustomIPTransport;dsnap;IndyCore;fmxase;inet;fmxobj;inetdbxpress;fmxdae;dbexpress;IPIndyImpl;$(DCC_UsePackage)</DCC_UsePackage>
 			<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
 			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
 			<DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
@@ -52,10 +52,10 @@
 			<DCC_K>false</DCC_K>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base_Win64)'!=''">
-			<DCC_UsePackage>TeeDB;vclib;Tee;vclimg;vclactnband;vcldb;TeeUI;bindcompvcl;vcldsnap;vclie;vcltouch;websnap;vclribbon;VclSmp;vcl;dsnapcon;vclx;webdsnap;adortl;$(DCC_UsePackage)</DCC_UsePackage>
+			<DCC_UsePackage>vclimg;vclactnband;vcldb;bindcompvcl;vcldsnap;vclie;vcltouch;websnap;VclSmp;vcl;dsnapcon;vclx;webdsnap;$(DCC_UsePackage)</DCC_UsePackage>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base_Win32)'!=''">
-			<DCC_UsePackage>vcldbx;frx16;TeeDB;vclib;inetdbbde;Tee;svnui;vclimg;intrawebdb_120_160;fmi;frxDB16;fs16;vclactnband;vcldb;TeeUI;bindcompvcl;vcldsnap;vclie;vcltouch;Intraweb_120_160;websnap;vclribbon;VclSmp;frxe16;fsDB16;vcl;CodeSiteExpressPkg;dsnapcon;vclx;webdsnap;svn;bdertl;adortl;$(DCC_UsePackage)</DCC_UsePackage>
+			<DCC_UsePackage>vcldbx;frx16;TeeDB;vclib;inetdbbde;Tee;svnui;ibxpress;vclimg;intrawebdb_120_160;fmi;frxDB16;fs16;vclactnband;FMXTee;vcldb;TeeUI;bindcompvcl;vcldsnap;vclie;vcltouch;Intraweb_120_160;websnap;vclribbon;VclSmp;frxe16;fsDB16;vcl;CloudService;CodeSiteExpressPkg;FmxTeeUI;dsnapcon;vclx;webdsnap;svn;bdertl;adortl;$(DCC_UsePackage)</DCC_UsePackage>
 			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
 			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
 			<VerInfo_Locale>1033</VerInfo_Locale>
@@ -82,18 +82,10 @@
 			<DelphiCompile Include="$(MainSource)">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\Unit\Unit1.pas">
-				<Form>Form1</Form>
+			<DCCReference Include="Unit2.pas">
+				<Form>Form2</Form>
 				<FormType>dfm</FormType>
 			</DCCReference>
-			<DCCReference Include="..\Unit\Unit2.pas">
-				<Form>$R *.res</Form>
-			</DCCReference>
-			<None Include="ModelSupport_Project1\default.txvpck"/>
-			<None Include="ModelSupport_Project1\Unit2\default.txvpck"/>
-			<None Include="ModelSupport_Project1\Project1\default.txvpck"/>
-			<None Include="ModelSupport_Project1\Unit2\default.txaPackage"/>
-			<None Include="ModelSupport_Project1\Unit1\default.txvpck"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
@@ -139,7 +131,7 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Source>
-						<Source Name="MainSource">Project1.dpr</Source>
+						<Source Name="MainSource">Project2.dpr</Source>
 					</Source>
 				</Delphi.Personality>
 				<Deployment/>
@@ -147,7 +139,6 @@
 					<Platform value="Win64">False</Platform>
 					<Platform value="Win32">True</Platform>
 				</Platforms>
-				<ModelSupport>True</ModelSupport>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>
