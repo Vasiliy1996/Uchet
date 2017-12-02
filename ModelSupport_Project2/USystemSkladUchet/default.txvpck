@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="x4d14j2y0bent02jt_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Project2:USystemSkladUchet.TSystemSkladUchet">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,141,84" />
+      <reference referencedUin="delphi:e_field:src:Project2:USystemSkladUchet.TSystemSkladUchet.Customer" />
+      <reference referencedUin="delphi:l_ast:src:Project2:USystemSkladUchet.TSystemSkladUchet.Customer">
+        <property name="sourceAnchor" value="151,67" />
+        <property name="targetAnchor" value="500,67" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project2:USystemSkladUchet.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project2:UOrder.TOrder">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="460,220,101,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project2:UCustomer.TCustomer">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="500,40,146,84" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project2:UCustomer.TCustomer.Order" />
+      <reference referencedUin="delphi:l_ast:src:Project2:UCustomer.TCustomer.Order">
+        <property name="sourceAnchor" value="530,124" />
+        <property name="targetAnchor" value="530,220" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project2:Unit2.TForm2">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="60,320,232,98" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project2:Unit2.TForm2.SystemSkladUchet" />
+      <reference referencedUin="delphi:l_ast:src:Project2:Unit2.TForm2.SystemSkladUchet">
+        <property name="sourceAnchor" value="105,320" />
+        <property name="targetAnchor" value="105,94" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>

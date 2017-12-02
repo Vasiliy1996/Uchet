@@ -2,7 +2,10 @@ program Project2;
 
 uses
   Vcl.Forms,
-  Unit2 in 'Unit2.pas' {Form2};
+  Unit2 in 'Unit2.pas' {Form2},
+  USystemSkladUchet in 'Model\USystemSkladUchet.pas',
+  UCustomer in 'Model\UCustomer.pas',
+  UOrder in 'Model\UOrder.pas';
 
 {$R *.res}
 

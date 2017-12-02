@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="xab4kw0pu8eyqbzui_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::s3ry43va6beqk585p_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project2:UOrder.TOrder" />
+      <reference referencedUin="delphi:e_class:src:Project2:UOrder.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::x4d14j2y0bent02jt_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="129,1,169,151" />
+      <reference referencedUin="delphi:e_class:src:Project2:USystemSkladUchet.TSystemSkladUchet" />
+      <reference referencedUin="delphi:e_class:src:Project2:USystemSkladUchet.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::y52kum2qfbeffdiuq_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="129,171,101,134" />
+      <reference referencedUin="delphi:e_class:src:Project2:Project2.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::f7edbl7tibeo6apzh_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,180,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project2:Unit2.TForm2" />
+      <reference referencedUin="delphi:e_class:src:Project2:Unit2.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::m09el4o02ce74g89k_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="336,1,118,151" />
+      <reference referencedUin="delphi:e_class:src:Project2:UCustomer.TCustomer" />
+      <reference referencedUin="delphi:e_class:src:Project2:UCustomer.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>
