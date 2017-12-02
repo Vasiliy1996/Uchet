@@ -9,6 +9,7 @@ type
     Customer: TCustomer;
     public
     constructor Create;
+    procedure Processing;
   end;
 
 implementation
@@ -17,7 +18,12 @@ implementation
 
 constructor TSystemSkladUchet.Create;
 begin
-   Customer:= TCustomer.Create;
+  //
+end;
+
+procedure TSystemSkladUchet.Processing;
+begin
+  Customer:= TCustomer.Create;
 end;
 
 end.
